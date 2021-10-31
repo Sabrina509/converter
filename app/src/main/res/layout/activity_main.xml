@@ -15,10 +15,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:id="@+id/editText" />
+        android:id="@+id/mText" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/cmText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -28,7 +28,7 @@
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/kmText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -43,17 +43,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="102dp"
-        android:text="Meter" />
+        android:layout_marginBottom="214dp"
+        android:text="m" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:layout_marginTop="345dp"
+        android:layout_below="@+id/mText"
+        android:layout_marginTop="279dp"
         android:gravity="center"
-        android:text="Converted Value Meter"
+        android:text="Converted Value"
         android:textSize="30sp" />
 
     <Button
@@ -64,15 +64,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="578dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginRight="18dp"
-        android:layout_marginBottom="97dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="210dp"
         android:layout_toStartOf="@+id/button"
         android:layout_toLeftOf="@+id/button"
-        android:text="Centimer" />
+        android:text="cm" />
 
     <Button
         android:id="@+id/button2"
@@ -82,11 +82,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="581dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginRight="38dp"
-        android:layout_marginBottom="102dp"
-        android:text="Kilometer" />
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="213dp"
+        android:text="km" />
 
 
 </RelativeLayout>
