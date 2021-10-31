@@ -34,14 +34,46 @@ public class MainActivity extends AppCompatActivity {
         mbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mText==null) {
+                if(kmText==null) {
                     Double convert = Double.parseDouble(cmText.getText().toString());
+                    sText.setText(String.valueOf(convert / 100));
+                    sText.setTextColor(Color.RED);
+                }
+                else if(cmText==null) {
+                    Double convert = Double.parseDouble(kmText.getText().toString());
+                    sText.setText(String.valueOf(convert * 1000));
+                    sText.setTextColor(Color.RED);
+                }
+            }
+        });
+
+        cmbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(kmText==null) {
+                    Double convert = Double.parseDouble(mText.getText().toString());
                     sText.setText(String.valueOf(convert * 100));
                     sText.setTextColor(Color.RED);
                 }
+                else if(mText==null) {
+                    Double convert = Double.parseDouble(kmText.getText().toString());
+                    sText.setText(String.valueOf(convert * 1000000));
+                    sText.setTextColor(Color.RED);
+                }
+            }
+        });
+
+        kmbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 if(cmText==null) {
                     Double convert = Double.parseDouble(mText.getText().toString());
-                    sText.setText(String.valueOf(convert * 1000));
+                    sText.setText(String.valueOf(convert / 1000));
+                    sText.setTextColor(Color.RED);
+                }
+                else if(mText==null) {
+                    Double convert = Double.parseDouble(cmText.getText().toString());
+                    sText.setText(String.valueOf(convert / 1000000));
                     sText.setTextColor(Color.RED);
                 }
             }
