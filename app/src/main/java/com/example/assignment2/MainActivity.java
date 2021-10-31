@@ -34,9 +34,14 @@ public class MainActivity extends AppCompatActivity {
         mybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(fText==null && fText1==null) {
-                    Double convert = Double.parseDouble(fText2.getText().toString());
+                if(fText2==null) {
+                    Double convert = Double.parseDouble(fText1.getText().toString());
                     sText.setText(String.valueOf(convert * 100));
+                    sText.setTextColor(Color.RED);
+                }
+                if(fText1==null) {
+                    Double convert = Double.parseDouble(fText2.getText().toString());
+                    sText.setText(String.valueOf(convert * 1000));
                     sText.setTextColor(Color.RED);
                 }
             }
